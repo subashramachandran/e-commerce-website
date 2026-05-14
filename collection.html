@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nostra</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav class="navbar">
+        <h1>Nostra</h1>
+
+        <div class="navbar-links">
+            <p class="navbar-link"><a href="index.html">Home</a></p>
+            <p class="navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+
+    <div class="side-navbar">
+        <p style="text-align: right;">
+            <i class="fa-solid fa-xmark" onclick="closenavbar()"></i>
+        </p>
+
+        <div class="side-navbar-links">
+            <p class="side-navbar-link"><a href="index.html">Home</a></p>
+            <p class="side-navbar-link"><a href="collection.html">Collections</a></p>
+            <p class="side-navbar-link"><a href="contact.html">Contact</a></p>
+        </div>
+
+    </div>
+
+    <div class="container py-5">
+
+    <h1 class="text-center mb-4" style="text-align: center; padding: 10px;">Collections</h1>
+
+    <!-- Search Box -->
+    <div class="search-box mb-5">
+
+      <input
+        type="text"
+        id="search"
+        class="form-control form-control-lg"
+        placeholder="Search products..."
+      >
+
+    </div>
+
+    <!-- Products -->
+    <div class="row g-4" id="productList">
+
+      <!-- 1 -->
+      <div class="col-lg-3 col-md-6 col-12 product" data-name="shirt">
+
+        <div class="card shadow">
+
+          <img
+            src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?w=500"
+            alt="Shirt"
+          >
+
+          <div class="card-body">
+            <h4>Shirt</h4>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 2 -->
+      <div class="col-lg-3 col-md-6 col-12 product" data-name="shoe">
+
+        <div class="card shadow">
+
+          <img
+            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500"
+            alt="Shoe"
+          >
+
+          <div class="card-body">
+            <h4>Shoe</h4>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 3 -->
+      <div class="col-lg-3 col-md-6 col-12 product" data-name="watch">
+
+        <div class="card shadow">
+
+          <img
+            src="https://images.unsplash.com/photo-1523170335258-f5ed11844a49?w=500"
+            alt="Watch"
+          >
+
+          <div class="card-body">
+            <h4>Watch</h4>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 4 -->
+      <div class="col-lg-3 col-md-6 col-12 product" data-name="tshirt">
+
+        <div class="card shadow">
+
+          <img
+            src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500"
+            alt="T-Shirt"
+          >
+
+          <div class="card-body">
+            <h4>T-Shirt</h4>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 5 -->
+      <div class="col-lg-3 col-md-6 col-12 product" data-name="hoodie">
+
+        <div class="card shadow">
+
+          <img
+            src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500"
+            alt="Hoodie"
+          >
+
+          <div class="card-body">
+            <h4>Hoodie</h4>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 6 -->
+      <div class="col-lg-3 col-md-6 col-12 product" data-name="cap">
+
+        <div class="card shadow">
+
+          <img
+            src="https://images.unsplash.com/photo-1521369909029-2afed882baee?w=500"
+            alt="Cap"
+          >
+
+          <div class="card-body">
+            <h4>Cap</h4>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 7 -->
+      <div class="col-lg-3 col-md-6 col-12 product" data-name="bag">
+
+        <div class="card shadow">
+
+          <img
+            src="https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500"
+            alt="Bag"
+          >
+
+          <div class="card-body">
+            <h4>Bag</h4>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 8 -->
+      <div class="col-lg-3 col-md-6 col-12 product" data-name="jacket">
+
+        <div class="card shadow">
+
+          <img
+            src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?w=500"
+            alt="Jacket"
+          >
+
+          <div class="card-body">
+            <h4>Jacket</h4>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+    <div class="footer">
+        <h3>Nostra</h3>
+        <p>Upgrade your lifestyle with stylish and affordable products only at Nostra</p>
+        <span><i class="fa-brands fa-instagram"></i>  <i class="fa-brands fa-facebook-f"></i> <i class="fa-brands fa-twitter"></i> </span>
+        <p>@2025 Nostra.com</p>
+    
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
